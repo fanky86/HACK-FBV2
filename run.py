@@ -10,6 +10,8 @@ from rich import print as cetak
 from rich.markdown import Markdown as mark
 from rich.columns import Columns as col
 
+os.system('clear')
+
 
 try:
 	import rich
