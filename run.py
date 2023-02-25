@@ -69,16 +69,16 @@ except ImportError:
 	sol().print(dof,style='cyan')
 	
 try:
-	import ruby
-	sul='# module ruby telah terinstall...'
+	import lolcat
+	sul='# module lolcat telah terinstall...'
 	syu=mark(sul,style='green')
 	sol().print(syu,style='cyan')
 except ImportError:
-	suq='# module ruby belum terinstall...'
+	suq='# module lolcat belum terinstall...'
 	suh=mark(suq,style='red')
 	sol().print(suh,style='cyan')
-	os.system('pkg install ruby -y')
-	dog='# succes install module ruby...'
+	os.system('pip install lolcat')
+	dog='# succes install module lolcat...'
 	dof=mark(dog,style='green')
 	sol().print(dof,style='cyan')
 	
