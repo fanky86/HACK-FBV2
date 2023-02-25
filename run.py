@@ -11,6 +11,7 @@ from rich.markdown import Markdown as mark
 from rich.columns import Columns as col
 
 os.system('clear')
+
 try:
 	import rich
 	sue='# module rich telah terinstall...'
@@ -23,15 +24,15 @@ except ImportError:
 	os.system('pip install rich')
 	
 try:
-	import bs4
-	sul='# module bs4 telah terinstall...'
+	import mechanize
+	sul='# module mechanize telah terinstall...'
 	syu=mark(sul,style='green')
 	sol().print(syu,style='cyan')
 except ImportError:
-	suq='# module bs4 belum terinstall...'
-	suh=mark(suq,style='green')
+	suq='# module mechanize belum terinstall...'
+	suh=mark(suq,style='red')
 	sol().print(suh,style='cyan')
-	os.system('pip install bs4')
-	dog='# succes install module bs4...'
+	os.system('pip install mechanize')
+	dog='# succes install module mechanize...'
 	dof=mark(dog,style='green')
 	sol().print(dof,style='cyan')
