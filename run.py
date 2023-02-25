@@ -69,20 +69,6 @@ except ImportError:
 	sol().print(dof,style='cyan')
 	
 try:
-	import lolcat
-	sul='# module lolcat telah terinstall...'
-	syu=mark(sul,style='green')
-	sol().print(syu,style='cyan')
-except ImportError:
-	suq='# module lolcat belum terinstall...'
-	suh=mark(suq,style='red')
-	sol().print(suh,style='cyan')
-	os.system('pip install lolcat')
-	dog='# succes install module lolcat...'
-	dof=mark(dog,style='green')
-	sol().print(dof,style='cyan')
-	
-try:
 	import requests
 	sul='# module requests telah terinstall...'
 	syu=mark(sul,style='green')
