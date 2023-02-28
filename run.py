@@ -81,6 +81,8 @@ except ImportError:
 	dog='# succes install module requests...'
 	dof=mark(dog,style='green')
 	sol().print(dof,style='cyan')
+	
+os.system('clear')
 
 from src import Data
 	
