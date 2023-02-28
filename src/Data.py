@@ -4,7 +4,7 @@ def update():
   os.system('git pull')
 def clear():
   os.system('clear')
- def login():
+def login():
   menu()
   
   banner=('OPEN WAR')
