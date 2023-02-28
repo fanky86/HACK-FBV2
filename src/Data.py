@@ -7,7 +7,7 @@ def clear():
 def login():
   menu()
   
-  banner=('OPEN WAR')
+banner=('''OPEN WAR''')
   
 class menu:
   print(f"""{banner}
