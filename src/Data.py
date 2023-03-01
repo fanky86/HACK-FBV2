@@ -39,7 +39,7 @@ def banner():
        ''')
 class menu:
   banner()
-  sue='\x1b[1;92m[1] OPEN PERANG AKUN KEGELAPAN\n\x1b[1;92m[2] KELUAR\n[3] GANTI AJA MUKA LO YG BAIK'
+  sue='[1] OPEN\n[2] EXIT'
   sul=nel(sue,style='cyan')
   cetak(nel(sul,title='PILIHAN MENU'))
   usna = input('pilih nomor : ')
