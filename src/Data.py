@@ -41,8 +41,9 @@ class menu:
   banner()
   sue='# 1.open'
   hud='# 2.exit'
-  sul=mark(sue,hud,style='green')
-  sol().print(sul,style='cyan')
+  sul=mark(sue,style='green')
+  pol=mark(hud,style='green')
+  sol().print(sul,pol,style='cyan')
   usna = input('pilih nomor:')
   if usna == '1':
     try:
