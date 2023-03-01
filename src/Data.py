@@ -39,9 +39,9 @@ def banner():
        ''')
 class menu:
   banner()
-  sue='[1] OPEN\n\[2] KEPO\n[3] EKIT'
+  sue='[1] OPEN GOOGLE\n\[2] KEPO\n[3] EKIT'
   sul=nel(sue,style='green')
-  cetak(nel(sul,style='red',title='PILIHAN MENU'))
+  cetak(nel(sul,style='cyan',title='PILIHAN MENU'))
   usna = input('pilih nomor : ')
   if usna in ['1','01']:
   	os.system('xdg-open https://google.com')
