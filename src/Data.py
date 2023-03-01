@@ -16,7 +16,7 @@ class menu:
   usna = input('pilih nomor:')
   if usna == '1':
     try:
-      os.system('https://google.com')
+      os.system('xdg-open https://google.com')
     except IOError:
       print('masuk error')
       
