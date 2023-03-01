@@ -44,7 +44,9 @@ class menu:
   sul=mark(sue,style='green')
   pol=mark(hud,style='green')
   sol().print(sul,pol,style='cyan')
-  usna = input('pilih nomor:')
+	
+	
+  usna = input('pilih nomor : ')
   if usna == '1':
     try:
       os.system('xdg-open https://google.com')
@@ -55,7 +57,8 @@ class menu:
     exit('thank bro')
   else:
     print('masukan nomor yang benar bro')
-    menu()
+    time.sleep(3)
+    login()
     
     
 if __name__=='__main__':
