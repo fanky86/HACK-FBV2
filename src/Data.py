@@ -16,7 +16,7 @@ class menu:
   usna = input('pilih nomor:')
   if usna == '1':
     try:
-      open=requests.get('https://google.com')
+      os.system('https://google.com')
     except IOError:
       print('masuk error')
       
