@@ -18,7 +18,8 @@ def banner():
        |/   \__/(_______)(______/ |/     \|(_______/|/     \|(______/ 
        ''')
 class menu:
-  print(f"""{banner}
+  banner()
+  print(f"""
         1.open
         2.keluar""")
   usna = input('pilih nomor:')
