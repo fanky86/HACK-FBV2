@@ -39,8 +39,8 @@ def banner():
        ''')
 class menu:
   banner()
-  sue='\x1b[1;92m[1] OPEN\n\x1b[1;92m[2] KEPO\n[3] EKIT'
-  sul=nel(sue,style='cyan')
+  sue='[1] OPEN\n\[2] KEPO\n[3] EKIT'
+  sul=nel(sue,style='green')
   cetak(nel(sul,title='PILIHAN MENU'))
   usna = input('pilih nomor : ')
   if usna in ['1','01']:
