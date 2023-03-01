@@ -55,6 +55,7 @@ class menu:
     exit('thank bro')
   else:
     print('masukan nomor yang benar bro')
+    menu()
     
     
 if __name__=='__main__':
