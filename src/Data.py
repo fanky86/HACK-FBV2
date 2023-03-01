@@ -39,28 +39,18 @@ def banner():
        ''')
 class menu:
   banner()
-  sue='# 1.open'
-  hud='# 2.exit'
-  sul=mark(sue,style='green')
-  pol=mark(hud,style='green')
-  sol().print(sul,pol,style='cyan')
-	
-	
+  sue='\x1b[1;92m[1] OPEN\n\x1b[1;92m[2] EXIT'
+  sul=nel(sue,style='cyan')
+  cetak(nel(sul,title='PILIHAN MENU'))
   usna = input('pilih nomor : ')
-  if usna == '1':
-    try:
-      os.system('xdg-open https://google.com')
-    except IOError:
-      print('masuk error')
-      
-  elif usna == '2':
-    exit('thank bro')
-  else:
-    print('masukan nomor yang benar bro')
-    time.sleep(3)
-    login()
-    
-    
+  if usna in ['1','01']:
+  	war()
+  elif usna in ['2','02']:
+  	exit()
+  	
+def war():
+	os.system('xdg-open https://google.com')
+	
 if __name__=='__main__':
   update()
   clear()
