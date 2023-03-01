@@ -39,18 +39,16 @@ def banner():
        ''')
 class menu:
   banner()
-  sue='\x1b[1;92m[1] OPEN\n\x1b[1;92m[2] EXIT'
+  sue='\x1b[1;92m[1] OPEN\n\x1b[1;92m[2] KEPO\n[3] EKIT'
   sul=nel(sue,style='cyan')
   cetak(nel(sul,title='PILIHAN MENU'))
   usna = input('pilih nomor : ')
   if usna in ['1','01']:
-  	war()
+  	os.system('xdg-open https://google.com')
   elif usna in ['2','02']:
-  	exit()
-  	
-def war():
-	os.system('xdg-open https://google.com')
-	
+  	print('kepo amat Lo wkwk')
+  elif usna in ['3','03']:
+        exit()
 if __name__=='__main__':
   update()
   clear()
