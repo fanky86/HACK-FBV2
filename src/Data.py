@@ -89,12 +89,12 @@ def banner():
 class login:
 	update()
 	banner()
-	sol='[1] OPEN\n[2] MENU\n[3] EXIT'
+	sol='[1] MY Social media\n[2] MENU\n[3] EXIT'
 	soi=nel(sol,style='green')
 	cetak(nel(soi,style='cyan',title='PILIHAN MENU'))
 	coi = input('\x1b[1;92m[?] pilih : ')
 	if coi in ['1','01']:
-		print('apa nya yang mau di buka bg')
+		os.system('xdg-open https://linktr.ee/mikaz_')
 	elif coi in ['2','02']:
 		clear()
 		sky='[1] Doa Pemancar aura\n[2] HACK\n[3] BACK TO MENU'
