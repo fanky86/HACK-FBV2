@@ -96,7 +96,7 @@ class login:
 		print('apa nya yang mau di buka bg')
 	elif coi in ['2','02']:
 		clear()
-		sky='[1] Install module\n[2] HACK'
+		sky='[1] Install module\n[2] HACK\n[3] BACK TO MENU'
 		lop=nel(sky,style='green')
 		cetak(nel(lop,title='MENU'))
 		usna = input('[?] pilih :')
@@ -104,6 +104,8 @@ class login:
 		       print('wlwkwkwk')
 		elif usna in ['2']:
 		       print('mau hack apa bro')
+		elif usna in ['3']:
+			login()
 	elif coi in ['3','03']:
 		exit()
 
