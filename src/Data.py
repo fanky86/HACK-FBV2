@@ -100,7 +100,7 @@ class login:
 		sky='[1] Doa Pemancar aura\n[2] HACK\n[3] BACK TO MENU'
 		lop=nel(sky,style='green')
 		cetak(nel(lop,style='cyan',title='MENU'))
-		usna = input('{u}[?] pilih :')
+		usna = input('\033[32m[?] pilih :')
 		if usna in ['1']:
 			oss='Iż qāla yụsufu li`abīhi yā abati innī ra`aitu aḥada asyara kaukabaw wasy-syamsa wal-qamara ra`aituhum lī sājidīn\n\nArtinya: (Ingatlah), ketika Yusuf berkata kepada ayahnya: "Wahai ayahku, sesungguhnya aku bermimpi melihat sebelas bintang, matahari dan bulan; kulihat semuanya sujud kepadaku".'
 			oos=nel(oss,style='green')
