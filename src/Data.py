@@ -91,6 +91,7 @@ class login:
 	sol='[1] OPEN\n[2] MENU\n[3] EXIT'
 	soi=nel(sol,style='green')
 	cetak(nel(soi,style='cyan',title='PILIHAN MENU'))
+	coi = input('\x1b[1;92m[?] pilih : '
 
 
 if __name__=='__main__':
