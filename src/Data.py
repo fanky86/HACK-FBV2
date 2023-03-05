@@ -102,7 +102,7 @@ class login:
 		cetak(nel(lop,title='MENU'))
 		usna = input('[?] pilih :')
 		if usna in ['1']:
-			oss='\nartinya : 'إِذْ قَالَ يُوسُفُ لِأَبِيهِ يَا أَبتِ إِنِّي رَأَيْتُ أَحَدَ عَشَرَ كَوْكَبًا وَالشَّمْسَ وَالْقَمَرَ رَأَيْتُهُمْ لِي سَاجِدِي
+			oss='Iż qāla yụsufu li`abīhi yā abati innī ra`aitu aḥada asyara kaukabaw wasy-syamsa wal-qamara ra`aituhum lī sājidīn\n\nArtinya: (Ingatlah), ketika Yusuf berkata kepada ayahnya: "Wahai ayahku, sesungguhnya aku bermimpi melihat sebelas bintang, matahari dan bulan; kulihat semuanya sujud kepadaku".'
 			oos=nel(oss)
 			cetak(nel(oos,title='Surah Yusuf Ayat 4'))
 		elif usna in ['2']:
