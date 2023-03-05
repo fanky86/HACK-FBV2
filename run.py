@@ -85,4 +85,3 @@ except ImportError:
 os.system('clear')
 
 from src import Data
-	
