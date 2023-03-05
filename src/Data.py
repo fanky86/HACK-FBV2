@@ -88,8 +88,8 @@ def banner():
        
 class login:
 	banner()
-	sol='[1] OPEN\n[2] MENU\n[3] EXIT'
-	soi=nel(sol,style='green')
+	sol='\x1b[1;92m[1] OPEN\n\x1b[1;92m[2] MENU\n[3] EXIT'
+	soi=nel(sol,style='red')
 	cetak(nel(soi,style='cyan',title='PILIHAN MENU'))
 
 
