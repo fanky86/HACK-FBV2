@@ -97,7 +97,7 @@ class login:
 	elif coi in ['2','02']:
 		sky='[1] Install module\n[2] HACK'
 		lop=nel(sky,style='green')
-		cetak=(nel(lop,title='MENU')
+		cetak=(nel(lop,title='MENU'))
 		usna == input('[?] pilih :')
 		if usna in ['1']:
 		       print('wlwkwkwk')
