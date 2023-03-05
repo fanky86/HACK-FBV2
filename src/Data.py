@@ -95,7 +95,7 @@ class login:
 	if coi in ['1','01']:
 		print('apa nya yang mau di buka bg')
 	elif coi in ['2','02']:
-		os.system('clear')
+		clear()
 		sky='[1] Install module\n[2] HACK'
 		lop=nel(sky,style='green')
 		cetak(nel(lop,title='MENU'))
@@ -110,5 +110,4 @@ class login:
 
 if __name__=='__main__':
   update()
-  clear()
   login()
