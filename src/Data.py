@@ -99,11 +99,11 @@ class login:
 		clear()
 		sky='[1] Doa Pemancar aura\n[2] HACK\n[3] BACK TO MENU'
 		lop=nel(sky,style='green')
-		cetak(nel(lop,title='MENU'))
+		cetak(nel(lop,style='cyan',title='MENU'))
 		usna = input('[?] pilih :')
 		if usna in ['1']:
 			oss='\x1b[1;92mIż qāla yụsufu li`abīhi yā abati innī ra`aitu aḥada asyara kaukabaw wasy-syamsa wal-qamara ra`aituhum lī sājidīn\n\n\x1b[1;93mArtinya: (Ingatlah), ketika Yusuf berkata kepada ayahnya: "Wahai ayahku, sesungguhnya aku bermimpi melihat sebelas bintang, matahari dan bulan; kulihat semuanya sujud kepadaku".'
-			oos=nel(oss,style='unggu')
+			oos=nel(oss,style='red')
 			cetak(nel(oos,style='cyan',title='Surah Yusuf Ayat 4'))
 		elif usna in ['2']:
 		       print('mau hack apa bro')
