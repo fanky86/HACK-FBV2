@@ -88,6 +88,7 @@ def banner():
        
 class login:
 	update()
+	clear()
 	banner()
 	sol='[1] MY Social media\n[2] MENU\n[3] EXIT'
 	soi=nel(sol,style='green')
