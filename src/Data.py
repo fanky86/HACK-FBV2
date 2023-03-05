@@ -103,7 +103,7 @@ class login:
 		usna = input('[?] pilih :')
 		if usna in ['1']:
 			oss='\x1b[1;92mIż qāla yụsufu li`abīhi yā abati innī ra`aitu aḥada asyara kaukabaw wasy-syamsa wal-qamara ra`aituhum lī sājidīn\n\n\x1b[1;93mArtinya: (Ingatlah), ketika Yusuf berkata kepada ayahnya: "Wahai ayahku, sesungguhnya aku bermimpi melihat sebelas bintang, matahari dan bulan; kulihat semuanya sujud kepadaku".'
-			oos=nel(oss,style'unggu')
+			oos=nel(oss,style='unggu')
 			cetak(nel(oos,style='cyan',title='Surah Yusuf Ayat 4'))
 		elif usna in ['2']:
 		       print('mau hack apa bro')
