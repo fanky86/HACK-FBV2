@@ -14,9 +14,6 @@ os.system('clear')
 
 try:
 	import rich
-	sue='# module rich telah terinstall...'
-	sui=mark(sue,style='green')
-	sol().print(sui,style='cyan')
 except ImportError:
 	sup='# module rich belum terinstall...'
 	suo=mark(sup,style='red')
@@ -28,9 +25,6 @@ except ImportError:
 	
 try:
 	import mechanize
-	sul='# module mechanize telah terinstall...'
-	syu=mark(sul,style='green')
-	sol().print(syu,style='cyan')
 except ImportError:
 	suq='# module mechanize belum terinstall...'
 	suh=mark(suq,style='red')
@@ -42,9 +36,6 @@ except ImportError:
 	
 try:
 	import bs4
-	sul='# module bs4 telah terinstall...'
-	syu=mark(sul,style='green')
-	sol().print(syu,style='cyan')
 except ImportError:
 	suq='# module bs4 belum terinstall...'
 	suh=mark(suq,style='red')
@@ -56,9 +47,6 @@ except ImportError:
 	
 try:
 	import bash
-	sul='# module bash telah terinstall...'
-	syu=mark(sul,style='green')
-	sol().print(syu,style='cyan')
 except ImportError:
 	suq='# module bash belum terinstall...'
 	suh=mark(suq,style='red')
@@ -70,9 +58,6 @@ except ImportError:
 	
 try:
 	import requests
-	sul='# module requests telah terinstall...'
-	syu=mark(sul,style='green')
-	sol().print(syu,style='cyan')
 except ImportError:
 	suq='# module requests belum terinstall...'
 	suh=mark(suq,style='red')
