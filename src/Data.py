@@ -87,6 +87,7 @@ def banner():
        ''')
        
 class login:
+	update()
 	banner()
 	sol='[1] OPEN\n[2] MENU\n[3] EXIT'
 	soi=nel(sol,style='green')
@@ -105,11 +106,10 @@ class login:
 		elif usna in ['2']:
 		       print('mau hack apa bro')
 		elif usna in ['3']:
-			login()
+			os.system('python run.py')
 	elif coi in ['3','03']:
 		exit()
 
 
 if __name__=='__main__':
-  update()
   login()
