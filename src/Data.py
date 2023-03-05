@@ -76,7 +76,7 @@ def clear():
   os.system('clear')
 def banner():
 	print('''
-      	\x1b[1;92m_______           ______   _______  _                 ______  
+      	\x1b[1;93m_______           ______   _______  _                 ______  
        (  ____ )|\     /|(  __  \ (  ___  )( \      |\     /|(  __  \ 
        | (    )|| )   ( || (  \  )| (   ) || (      ( \   / )| (  \  )
        | (____)|| |   | || |   ) || (___) || | _____ \ (_) / | |   ) |
@@ -88,8 +88,8 @@ def banner():
        
 class login:
 	banner()
-	sol='\x1b[1;92m[1] OPEN\n\x1b[1;92m[2] MENU\n[3] EXIT'
-	soi=nel(sol,style='red')
+	sol='[1] OPEN\n[2] MENU\n[3] EXIT'
+	soi=nel(sol,style='green')
 	cetak(nel(soi,style='cyan',title='PILIHAN MENU'))
 
 
