@@ -86,47 +86,13 @@ def banner():
        |/   \__/(_______)(______/ |/     \|(_______/|/     \|(______/ 
        ''')
        
-
-def login():
+class login:
 	banner()
-	sky = '# MASUKAN TOKEN FACEBOOK'
-	sky2 = mark(sky, style='green')
-	sol().print(sky2, style='cyan')
-	panda = input(x+'['+p+'•'+x+'] Token Fb : ')
-	akun=open('.token.txt','w').write(panda)
-	try:
-		tes = requests.get('https://graph.facebook.com/me?access_token='+panda)
-		tes3 = json.loads(tes.text)['id']
-		sue = '# nice Login berhasil'
-		suu = mark(sue, style='green')
-		sol().print(suu, style='cyan')
-		time.sleep(2.5)
-		menu()
-	except KeyError:
-		sue = '# Login Gagal, Cek token'
-		suu = mark(sue, style='red')
-		sol().print(suu, style='cyan')
-		time.sleep(2.5)
-		os.system('clear')
-		login()
-	except requests.exceptions.ConnectionError:
-		li = '# KONEKSI INTERNET BERMASALAH, PERIKSA & COBA LAGI'
-		lo = mark(li, style='red')
-		sol().print(lo, style='cyan')
-		exit()
-		
-def menu():
-  banner()
-  sue='[1] OPEN GOOGLE\n\[2] KEPO\n[3] EKIT'
-  sul=nel(sue,style='green')
-  cetak(nel(sul,style='cyan',title='PILIHAN MENU'))
-  usna = input('pilih nomor : ')
-  if usna in ['1','01']:
-  	os.system('xdg-open https://google.com')
-  elif usna in ['2','02']:
-  	print('kepo amat Lo wkwk')
-  elif usna in ['3','03']:
-        exit()
+	sol='[1] OPEN\n[2] MENU\n[3] EXIT'
+	soi=mark(sol,style='green')
+	cetak(soi,tirtle='PILIHAN MENU')
+
+
 if __name__=='__main__':
   update()
   clear()
