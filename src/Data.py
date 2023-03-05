@@ -90,7 +90,7 @@ class login:
 	banner()
 	sol='[1] OPEN\n[2] MENU\n[3] EXIT'
 	soi=nel(sol,style='green')
-	cetak(nel(soi,title='PILIHAN MENU'))
+	cetak(nel(soi,style='cyan',title='PILIHAN MENU'))
 
 
 if __name__=='__main__':
