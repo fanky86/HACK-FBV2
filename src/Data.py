@@ -102,9 +102,9 @@ class login:
 		cetak(nel(lop,title='MENU'))
 		usna = input('[?] pilih :')
 		if usna in ['1']:
-			oss='Iż qāla yụsufu li`abīhi yā abati innī ra`aitu aḥada asyara kaukabaw wasy-syamsa wal-qamara ra`aituhum lī sājidīn\n\nArtinya: (Ingatlah), ketika Yusuf berkata kepada ayahnya: "Wahai ayahku, sesungguhnya aku bermimpi melihat sebelas bintang, matahari dan bulan; kulihat semuanya sujud kepadaku".'
-			oos=nel(oss)
-			cetak(nel(oos,title='Surah Yusuf Ayat 4'))
+			oss='\x1b[1;92mIż qāla yụsufu li`abīhi yā abati innī ra`aitu aḥada asyara kaukabaw wasy-syamsa wal-qamara ra`aituhum lī sājidīn\n\n\x1b[1;93mArtinya: (Ingatlah), ketika Yusuf berkata kepada ayahnya: "Wahai ayahku, sesungguhnya aku bermimpi melihat sebelas bintang, matahari dan bulan; kulihat semuanya sujud kepadaku".'
+			oos=nel(oss,style'unggu')
+			cetak(nel(oos,style='cyan',title='Surah Yusuf Ayat 4'))
 		elif usna in ['2']:
 		       print('mau hack apa bro')
 		elif usna in ['3']:
