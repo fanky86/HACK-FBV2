@@ -86,7 +86,7 @@ class login:
 		elif usna in ['3']:
 			os.system('python run.py')
 		else:
-			print('j\x1b[1;91mangan kosong sayang')
+			print('\x1b[1;91mjangan kosong sayang')
 			os.system('python run.py')
 	elif coi in ['3','03']:
 		exit()
