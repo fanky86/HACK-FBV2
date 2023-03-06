@@ -86,6 +86,7 @@ class login:
 		elif usna in ['3']:
 			os.system('python run.py')
 		else:
+			print('jangan kosong sayang')
 			os.system('python run.py')
 	elif coi in ['3','03']:
 		exit()
