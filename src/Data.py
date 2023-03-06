@@ -67,7 +67,7 @@ class login:
 	sol='[1] MY Social media\n[2] MENU\n[3] EXIT'
 	soi=nel(sol,style='green')
 	cetak(nel(soi,style='cyan',title='PILIHAN MENU'))
-	coi = input('\x1b[1;92m[war] pilih : ')
+	coi = input('\x1b[1;92m[?] pilih : ')
 	if coi in ['1','01']:
 		print('\x1b[1;93mKamu akan di arahkan ke link...');time.sleep(1);os.system('xdg-open https://linktr.ee/mikaz_')
 	elif coi in ['2','02']:
