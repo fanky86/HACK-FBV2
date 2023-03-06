@@ -108,7 +108,7 @@ class login:
 			oos=nel(oss,style='green')
 			cetak(nel(oos,style='cyan',title='Surah Yusuf Ayat 4'))
 		elif usna in ['2']:
-		       print('mau hack apa bro')
+		       from src import Hc
 		elif usna in ['3']:
 			os.system('python run.py')
 	elif coi in ['3','03']:
