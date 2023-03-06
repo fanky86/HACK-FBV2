@@ -17,6 +17,6 @@ try:
 	opp=nel(oss,style='green')
 	cetak(nel(opp,style='cyan',title='*「 Ayat Kursi 」*'))
 	enter=input('tekan enter')
-	Ket=open(from src import Data).write(enter)
+	Ket= from src import Data .write(enter)
 except KeyError:
 	print()
