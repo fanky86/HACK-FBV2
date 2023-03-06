@@ -95,7 +95,7 @@ class login:
 	cetak(nel(soi,style='cyan',title='PILIHAN MENU'))
 	coi = input('\x1b[1;92m[?] pilih : ')
 	if coi in ['1','01']:
-		os.system('xdg-open https://linktr.ee/mikaz_')
+		print('Kamu akan di arahkan ke link...');time.sleep(1);os.system('xdg-open https://linktr.ee/mikaz_')
 	elif coi in ['2','02']:
 		clear()
 		banner()
