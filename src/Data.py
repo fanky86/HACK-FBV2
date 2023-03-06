@@ -85,8 +85,13 @@ class login:
 		       from src import Hc
 		elif usna in ['3']:
 			os.system('python run.py')
+		else:
+			os.system('python run.py')
 	elif coi in ['3','03']:
 		exit()
+	else:
+		print('jangan kosong bg')
+		os.system('python run.py')
 
 
 if __name__=='__main__':
