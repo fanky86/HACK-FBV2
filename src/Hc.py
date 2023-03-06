@@ -17,6 +17,6 @@ try:
 	opp=nel(oss,style='green')
 	cetak(nel(opp,style='cyan',title='*「 Ayat Kursi 」*'))
 	enter=input('tekan enter')
-	akun=enter()
+	akun=%senter()
 except KeyError:
 	print()
