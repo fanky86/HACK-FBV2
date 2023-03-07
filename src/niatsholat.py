@@ -66,4 +66,4 @@ class sholat:
 		
 		
 if __name__=='__main__':
-	sholat()
+	login()
