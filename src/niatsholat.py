@@ -11,8 +11,11 @@ from rich.markdown import Markdown as mark
 from rich.columns import Columns as col
 
 os.system('clear')
+def login():
+	sholat()
+
 def clear():
-		os.system('clear')
+	os.system('clear')
 		
 def subuh():
 				oss='latin : Ushalli fardhosh shubhi rok`ataini mustaqbilal qiblati adaa-an lillaahi ta`aala\n\nTranslation_id : Aku berniat shalat fardhu Shubuh dua raka`at menghadap kiblat karena Allah Ta`ala'
@@ -59,6 +62,7 @@ class sholat:
 		isak()
 	else:
 		print('\x1b[1;91mwrong input [!!!]')
+		sholat()
 		
 		
 if __name__=='__main__':
