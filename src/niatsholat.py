@@ -62,7 +62,7 @@ class sholat:
 	elif usna in ['5','05']:
 		isak()
 	elif usna in ['6','06']:
-		from islamic import run
+		from src.run import islamic
 	else:
 		print('\x1b[1;91mwrong input [!!!]')
 		from src import Data
