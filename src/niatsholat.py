@@ -45,8 +45,9 @@ def isak():
 				cetak(nel(poo,style='cyan',title='NIAT SHOLAT ISAK'))
 				
 				
+				
 class sholat:
-	oss='[1] SHOLAT SUBUH\n[2] SHOLAT DZUHUR\n[3] SHOLAT ASHAR\n[4] SHOLAT MAGRIB\n[5] SHOLAT ISYA`'
+	oss='[1] SHOLAT SUBUH\n[2] SHOLAT DZUHUR\n[3] SHOLAT ASHAR\n[4] SHOLAT MAGRIB\n[5] SHOLAT ISYA`\n[6] BACK'
 	pos=nel(oss,style='green')
 	cetak(nel(pos,style='cyan',title='PILIHAN NIAT SHOLAT'))
 	usna = input('pilih nomor : ')
@@ -60,6 +61,8 @@ class sholat:
 		magrib()
 	elif usna in ['5','05']:
 		isak()
+	elif usna in ['6','06']:
+		from islamic import run
 	else:
 		print('\x1b[1;91mwrong input [!!!]')
 		from src import Data
