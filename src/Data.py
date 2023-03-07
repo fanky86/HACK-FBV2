@@ -73,7 +73,7 @@ class login:
 	elif coi in ['2','02']:
 		clear()
 		banner()
-		sky='[1] SURAH YUSUF AYAT 4\n[2] AYAT KURSI\n[3] NIAT SHOLAT[4] BACK TO MENU'
+		sky='[1] SURAH YUSUF AYAT 4\n[2] AYAT KURSI\n[3] NIAT SHOLAT\n[4] BACK TO MENU'
 		lop=nel(sky,style='green')
 		cetak(nel(lop,style='cyan',title='MENU'))
 		usna = input('\x1b[1;93m[?] pilih :')
