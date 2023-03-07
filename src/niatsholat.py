@@ -62,7 +62,7 @@ class sholat:
 	elif usna in ['5','05']:
 		isak()
 	elif usna in ['6','06']:
-		from src import asset.cok
+		from src import cok in asset
 	else:
 		print('\x1b[1;91mwrong input [!!!]')
 		from src import Data
