@@ -64,7 +64,7 @@ class login:
 	update()
 	clear()
 	banner()
-	sol='[1] MY SOCIAL MEDIA\n[2] MENU\n[3] EXIT'
+	sol='[1] MY SOCIAL MEDIA\n[2] ISLAMIC\n[3] EXIT'
 	soi=nel(sol,style='green')
 	cetak(nel(soi,style='cyan',title='PILIHAN MENU'))
 	coi = input('\x1b[1;92m[?] pilih : ')
@@ -73,7 +73,7 @@ class login:
 	elif coi in ['2','02']:
 		clear()
 		banner()
-		sky='[1] Doa Pemancar aura\n[2] ayat kursi\n[3] BACK TO MENU'
+		sky='[1] SURAH YUSUF AYAT 4\n[2] AYAT KURSI\n[3] NIAT SHOLAT[4] BACK TO MENU'
 		lop=nel(sky,style='green')
 		cetak(nel(lop,style='cyan',title='MENU'))
 		usna = input('\x1b[1;93m[?] pilih :')
@@ -82,8 +82,11 @@ class login:
 			oos=nel(oss,style='green')
 			cetak(nel(oos,style='cyan',title='Surah Yusuf Ayat 4'))
 		elif usna in ['2']:
+		       
 		       from src import Hc
 		elif usna in ['3']:
+			from src import niatsholat
+		elif usna in ['4']:
 			os.system('python run.py')
 		else:
 			print('\x1b[1;91mjangan kosong sayang')
