@@ -62,7 +62,7 @@ class sholat:
 		isak()
 	else:
 		print('\x1b[1;91mwrong input [!!!]')
-		
+		from src import niatsholat
 		
 if __name__=='__main__':
 	login()
