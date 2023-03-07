@@ -62,8 +62,7 @@ class sholat:
 		isak()
 	else:
 		print('\x1b[1;91mwrong input [!!!]')
-		login()
 		
 		
 if __name__=='__main__':
-	sholat()
+	login()
