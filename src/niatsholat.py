@@ -62,10 +62,9 @@ class sholat:
 	elif usna in ['5','05']:
 		isak()
 	elif usna in ['6','06']:
-		from src import cok in asset
+		os.system('python run.py')
 	else:
 		print('\x1b[1;91mwrong input [!!!]')
-		from src import Data
 		
 if __name__=='__main__':
 	login()
