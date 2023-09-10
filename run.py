@@ -1,5 +1,32 @@
+import os, sys
+
+M = '\x1b[1;91m' # MERAH
+H = '\x1b[1;92m' # HIJAU
+N = '\x1b[0m'    # WARNA MATI
+
+def clear():
+    if "win" in sys.platform:os.system("cls")
+    else:os.system("clear")
+
+try:
+    import requests
+except ImportError:
+    clear();print(f"\n [{M}!{N}] Modul {H}requests{N} belum terinstall!...\n")
+    os.system("pip install requests")
+
+try:
+    import bs4
+except ImportError:
+    clear();print(f"\n [{M}!{N}] Modul {H}Bs4{N} belum terinstall!...\n")
+    os.system("pip install bs4")
+
+try:
+    import rich
+except ImportError:
+    clear();print(f"\n [{M}!{N}] Modul {H}Rich{N} belum terinstall!..\n.")
+    os.system("pip install rich")
+
 import requests,bs4,json,os,sys,random,datetime,time,re,urllib3,rich,base64,subprocess,uuid
-#------------------[ IMPORT MODULE ]-------------------#
 from time import sleep
 from rich import pretty
 from rich.tree import Tree
@@ -180,45 +207,10 @@ def banner():
 [bold red]███████████████████████             
 [bold red]███████████████████████          [bold yellow]Github    : [bold green]https://github.com/Rudal-XD
 [bold red]███████████████████████          [bold yellow]Wa        : [bold green]+62895386194***
-[bold white]███████████████████████          [bold yellow]Note      : [bold green]License Gratis Bree
-[bold white]███████████████████████          [bold yellow]Larangan  : [bold green]Ntah Lah Mumet
+[bold white]███████████████████████ 
+[bold white]███████████████████████          
 [bold white]███████████████████████             
 [bold white]"""))
-#----------[LICENSE]------------#
-def readd():
-    try:
-        license()
-    except:
-        license()
-def license():
-    try :
-        os.system ('clear')
-        banner()
-        Console(width=80, style="bold cyan").print(Panel("""[bold yellow][1] [bold white]Dapatkan Api key\n[bold yellow][2] [bold white]Masukan Api Key\n[bold yellow][3] [bold white]Keluar [bold red][Exit][bold white]""",subtitle="╭───", subtitle_align="left", title="[bold red]>[bold yellow]>[bold green]>[hot_pink2] (License) [bold green]<[bold yellow]<[bold red]<"))
-        masuk = Console().input("[bold cyan]   ╰─> ")
-        if masuk in ['1','01']:
-            print (f"{H}[{P}!{H}]{P} Anda Akan Diarahkan Ke Whatsapp...")
-            time .sleep (3 )
-            os .system ('xdg-open https://wa.me/62895386194665?text=Bang+Minta+Lisensi')
-            exit ()
-        elif masuk in ['2','02']:
-            Console(width=80, style="bold cyan").print(Panel("""Masukan licensi mu""",subtitle="╭───", subtitle_align="left"))
-            keyy = str(input("   ╰─>  "))
-            if len (keyy)==0:
-                exit(f"{H}[{P}*{H}]{P} jangan kosong bang")
-            else:
-                with requests.Session() as kol:
-                    mas = kol.get(f'https://app.cryptolens.io/api/key/Activate?token=WyI1ODU1MjYyMyIsIk1iNnBPaEFUazRUQ245bmFJQ1ZKYkRLNVV2OXNlUG5OUTFYQVpyQ08iXQ==&ProductId=21585&Key={keyy}&Sign=True').json() ['licenseKey']
-                    open('key.txt','w').write(keyy)
-                    print(f"[*] Expired : {mas['expires'].split('T')[0]}");time.sleep(2);login()
-        elif masuk in ['3','03']:
-            exit ()
-        else :
-            exit (f"[!] Wrong Input")
-    except (KeyError ):
-        exit (f"[!] Api Key Invalid")
-    except Exception as masuk :
-        exit (f"[!] {masuk}")
     
 #--------------------[ BAGIAN-MASUK ]--------------#
 def login123():
@@ -1410,4 +1402,4 @@ if __name__=='__main__':
 	except:pass
 	try:os.system('clear')
 	except:pass
-	readd()
+	login()
