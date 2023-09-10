@@ -747,10 +747,10 @@ def passwrd():
 						pwv.append(frs+'1234567')
 						pwv.append(frs+'12345678')
 						pwv.append(frs+'123456789')
-					if 'ya' in pwpluss: 
+				if 'ya' in pwpluss:
 					for xpwd in pwnya:
 						pwv.append(xpwd)
-					else:pass
+				else:pass
 				if 'validate1' in method:
 					pool.submit(validate1,idf,pwv)
 				elif 'validate2' in method:
